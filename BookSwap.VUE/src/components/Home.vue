@@ -123,6 +123,8 @@
 
                 self.$http.put("/v1/threads", { BookId: self.bookModal.Id, From: user.email }).then(() => {
                     self.isBookModalOpen = false;
+
+                    self.$notify("Successfully sent message to the book owner.");
                 });
             }
         },

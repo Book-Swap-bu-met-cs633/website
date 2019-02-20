@@ -117,10 +117,14 @@
                     self.$http.post("/v1/books", self.book).then(() => {
                         self.book = {};
                         self.$refs.filePicker.value = "";
+
+                        self.$notify("Successfully posted book.");
                     });
                 } else {
                     self.$http.put("/v1/books/" + self.$route.params.id, self.book).then(() => {
                         self.$router.push({ path: "/profile" });
+
+                        self.$notify("Successfully updated book.");
                     });
                 }
             },

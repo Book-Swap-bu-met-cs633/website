@@ -9,9 +9,11 @@ import { VueMasonryPlugin } from 'vue-masonry';
 import VueChatScroll from 'vue-chat-scroll'
 import config from "./config.json";
 import session from "./session";
+import Notify from 'vue2-notify'
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+//import 'vue-toastr/src/vue-toastr.scss';
 
 import HomeComponent from "./components/Home.vue";
 import SearchComponent from "./components/Search.vue";
@@ -31,6 +33,7 @@ Vue.use(VueAxios, axios);
 Vue.use(Router);
 Vue.use(VueChatScroll);
 Vue.use(BootstrapVue);
+Vue.use(Notify, { visibility: 5000, position: "top-full" });
 
 let router = new Router({
     base: __dirname,
