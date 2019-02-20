@@ -6,13 +6,15 @@
                 <h1>Find your Next Book</h1>
                 <p>Type a title or ISBN</p>
                 <div class="poster-search">
-                    <div class="input-group">
-                        <i class="fa fa-search"></i>
-                        <input type="text" v-model="term" placeholder="Enter a keyword..." class="form-control form-control-lg">
-                        <div class="input-group-append">
-                            <button v-on:click="search" class="btn-poster-search btn btn-primary" type="button">Search</button>
+                    <form v-on:submit.prevent="search">
+                        <div class="input-group">
+                            <i class="fa fa-search"></i>
+                            <input type="text" v-model="term" placeholder="Enter a keyword..." class="form-control form-control-lg">
+                            <div class="input-group-append">
+                                <button class="btn-poster-search btn btn-primary" type="submit">Search</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
