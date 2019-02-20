@@ -38,7 +38,6 @@
                     ref="filePicker"
                     v-on:change="encodeImage()"
                     class="form-control"
-                    required
                   >
                 </div>
 

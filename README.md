@@ -2,6 +2,7 @@
 Textbook swapping for students.
 
 Live at: http://miffychen.me/
+<!--- Check for build status here: https://tedmatuszewski.visualstudio.com/Development/_build? --->
 
 
 ## Installation
