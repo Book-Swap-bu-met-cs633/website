@@ -13,7 +13,6 @@ import Notify from 'vue2-notify'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-//import 'vue-toastr/src/vue-toastr.scss';
 
 import HomeComponent from "./components/Home.vue";
 import SearchComponent from "./components/Search.vue";

@@ -116,7 +116,8 @@
                 Messages: [],
                 ActiveThread: {},
                 NewMessage: "",
-                User: {}
+                User: {},
+                timer: null
             }
         },
         methods: {
@@ -192,7 +193,7 @@
                 self.Threads = response.data;
             });
 
-            setInterval(function () {
+            self.timer = setInterval(function () {
                 if (self.ActiveThread.Id == null) {
                     return;
                 }
@@ -204,6 +205,9 @@
                 })
                 
             }, 10000);
+        },
+        beforeDestroy () {
+            clearInterval(this.timer);
         }
     };
 </script>
