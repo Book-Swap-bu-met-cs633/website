@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label class="form-label">Profile Photo</label>
+                  <label class="form-label">Profile Photo (Optional)</label>
                   <input
                     type="file"
                     accept=".gif, .jpg, .jpeg, .png"
