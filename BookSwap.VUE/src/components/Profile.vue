@@ -142,6 +142,8 @@
 
                 self.$http.delete("/v1/books/" + book.Id).then(() => {
                     self.Books.splice(index, 1);
+
+                    self.$notify("Successfully deleted book.");
                 });
             },
             tabChange(tab) {
