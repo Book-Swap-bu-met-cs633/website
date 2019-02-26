@@ -11,7 +11,7 @@
                         <img style="max-height:100px; max-width:100%;" class="align-self-start mr-3" :src="book.Image" :alt="book.Title">
                     </div>
                     <div class="col-sm-10">
-                        <div class="d-flex w-100 justify-content-between">
+                        <div class="d-flex w-100 mt-1 justify-content-between">
                             <h5 class="mb-1">{{book.Title}}</h5>
                             <small>{{book.Class}}</small>
                         </div>
