@@ -1,4 +1,7 @@
+[![Build Status](https://tedmatuszewski.visualstudio.com/Development/_apis/build/status/Book%20Swap%20Website?branchName=master)](https://tedmatuszewski.visualstudio.com/Development/_build/latest?definitionId=11&branchName=master)
+
 # Book Swap
+
 Textbook swapping for students.
 
 Live at: http://miffychen.me/
